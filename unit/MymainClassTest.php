@@ -21,22 +21,17 @@ class MymainClassTest extends PHPUnit_Framework_TestCase {
         echo $output;
     }
 
-    public function testInsertInLogMockery() {
-        $mymain = m::mock('MymainClass');
-        $mymain->shouldReceive('insertInLog')->times(2)->andReturn(10, 12, 14);
-
-        $output = $mymain->insertInLog(3, 3);
-        print_r($output);
-
-        print_r($output);
-        echo "-----";
-
-        print_r($mymain->insertInLog(3, 3));
-        echo "-----";
-
-        print_r($mymain->insertInLog(3, 3));
-        
-    }
+//    public function testInsertInLogMockery() {
+//        $mymain = m::mock('MymainClass');
+//        $mymain->shouldReceive('insertInLog')->times(2)->andReturn(10, 12, 14);
+//        $output = $mymain->insertInLog(3, 3);
+//        print_r($output);
+//        print_r($output);
+//        echo "-----";
+//        print_r($mymain->insertInLog(3, 3));
+//        echo "-----";
+//        print_r($mymain->insertInLog(3, 3));
+//    }
 
     public function getLogFileTest($var1) {
         
