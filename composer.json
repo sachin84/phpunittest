@@ -1,6 +1,7 @@
 {
     "require": {
-        "phpunit/phpunit": "*"
+        "phpunit/phpunit": "*",
+        "phpstan/phpstan": "*"
     },
 	"autoload":{
 		"classmap":["./"]

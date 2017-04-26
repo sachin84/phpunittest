@@ -1,6 +1,7 @@
 <?php
 
-class MockUUIDTest extends PHPUnit_Framework_TestCase {
+require_once 'vendor\phpunit\phpunit\src\Framework\TestCase.php';
+class MockUUIDTest extends \PHPUnit_Framework_TestCase {
 
     public function testgenerateSMSCodeValidWithProvider() {
        
